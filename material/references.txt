@@ -1,0 +1,9 @@
+https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.creditcardattribute?view=net-8.0&redirectedfrom=MSDN
+
+https://regex101.com/
+
+https://www.jflap.org/
+
+https://gist.github.com/bjcull/662078
+https://www.paypalobjects.com/en_GB/vhelp/paypalmanager_help/credit_card_numbers.htm
+https://dev.na.bambora.com/docs/references/payment_APIs/test_cards/

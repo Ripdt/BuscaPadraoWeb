@@ -1,0 +1,19 @@
+Expressão Regular:
+
+\b4\d{12}(?:\d{3})?\b
+
+Explicação Detalhada:
+
+\b: indica que a expressão deve estar no começo de uma palavra, ou seja, não deve considerar expressões válidas que estejam dentro de outra palavra. (Ex.: Não deve considerar abc4222222222222222def)
+
+4: deve começar com o caractere '4'
+
+\d{12}: os doze próximos caracteres devem ser numéricos
+
+(?:\d{3})?:
+
+	O (?: ... ) é um grupo de não captura, logo, o conteúdo dentro dos parênteses é agrupado, mas não é armazenado como um grupo separado na correspondência.
+	Dentro desse grupo, \d{3} especifica que pode haver mais três dígitos numéricos adicionais.
+	O ? após o grupo significa que esse grupo pode aparecer 0 ou 1 vez, sendo assim, a sequência total pode ter 13 ou 16 dígitos no total, dependendo da presença ou ausência desse grupo opcional de três dígitos.
+
+\b: A expressão deve terminar em uma borda de palavra, indicando o final da sequência numérica. Isso garante que a sequência seja considerada completa e não faça parte de outra palavra ou sequência maior.
